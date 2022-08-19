@@ -1,0 +1,29 @@
+.featureFlex img { width: 40px; }
+
+.featureFlex {
+	margin-bottom: 50px;
+	flex-grow: 1; 
+	width: 33%; 
+}
+
+.feature {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--white);
+}
+
+.featureDescription {
+	width: 90%;
+	font-size: 13px;
+	
+}
+
+.featureDescription{
+	color: var(--grey);
+}
+
+.sectionDivider {
+	margin-bottom: 50px;
+	height: 5;
+	color: var(--grey);
+}

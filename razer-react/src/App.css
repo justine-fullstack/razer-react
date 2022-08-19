@@ -1,0 +1,21 @@
+*{
+  font-family: 'Montserrat';
+}
+
+:root{
+  --green: #00ff01;
+  --grey: #988c8c;
+  --dark-grey: #0f0f0f;
+  --black: #000;
+  --white: #fff;
+}
+
+.container{
+  max-width: 1200px !important;
+}
+
+.sectionHeadline{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--green)
+}

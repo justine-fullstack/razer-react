@@ -1,0 +1,22 @@
+.featuresSection{
+	padding: 125px 0 100px 0;
+	background-color: var(--dark-grey)
+}
+.flexContainer{
+  margin: 50px 0;
+  display: flex;
+	flex-wrap: wrap;
+	width: 51% !important;
+  justify-content: center;
+}
+
+.featureHeader{
+	margin: auto;
+	width: 39%;
+	text-align: center;
+}
+
+.featureSubheadline{
+	color: var(--grey);
+}
+
