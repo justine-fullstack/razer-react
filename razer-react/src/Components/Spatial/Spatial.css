@@ -1,0 +1,13 @@
+.thxSpatialContainer{
+    width: 28%;
+    padding: 100px 0;
+}
+
+.spatialSection{
+    background-image: url(../../Assets/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
+    background-size: cover;
+}
+
+.thxIcon{
+    width: 150px;
+}

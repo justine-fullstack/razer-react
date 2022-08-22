@@ -1,0 +1,36 @@
+.contactSection{
+    background-color: var(--black);
+}
+.form-control{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--white);
+    padding: 12px;
+    background-color: #fff0;
+    border: 1px solid white;
+    border-radius: 5px;  
+    margin-bottom: 16px;
+}
+
+.form-control::placeholder{
+    color: var(--grey)
+}
+
+.contactRow{
+    padding: 100px 0;
+}
+
+.messageInput{
+    height: 100px;
+}
+
+.actionBtn{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 15px;
+    padding: 15px 70px;
+    background: var(--green);
+    border-radius: 40px;
+    border: unset;
+}

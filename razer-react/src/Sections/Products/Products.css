@@ -1,0 +1,11 @@
+.productsSection{
+    background-color: var(--dark-grey);
+}
+
+.otherProducts{
+    padding-top: 100px;
+}
+
+.otherProductsRow{
+    padding-bottom: 100px;
+}
