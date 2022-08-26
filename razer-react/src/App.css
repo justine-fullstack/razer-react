@@ -1,8 +1,8 @@
-*{
-  font-family: 'Montserrat';
+* {
+  font-family: "Montserrat";
 }
 
-:root{
+:root {
   --green: #00ff01;
   --grey: #988c8c;
   --dark-grey: #0f0f0f;
@@ -10,12 +10,18 @@
   --white: #fff;
 }
 
-.container{
+.container {
   max-width: 1200px !important;
 }
 
-.sectionHeadline{
+.sectionHeadline {
   font-size: 20px;
   font-weight: bold;
-  color: var(--green)
+  color: var(--green);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 30px !important;
+  }
 }

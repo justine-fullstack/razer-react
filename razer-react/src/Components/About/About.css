@@ -1,28 +1,52 @@
-.about-section {
-	background-image: url(../../Assets/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
-	background-size: cover;
+.aboutSection {
+  background-image: url(../../Assets/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
+  background-size: cover;
 }
 
-.about-description-container {
-	padding: 150px 0 125px 0;
-	width: 50%;
+.aboutDescriptionContainer {
+  padding: 150px 0 125px 0;
+  width: 50%;
 }
 
-.description-title{
-	font-size: 40px;
-	font-weight: bold;
-	color: var(--white);
-	line-height: 1.2;
+.descriptionTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+  line-height: 1.2;
 }
 
-.description { color: var(--grey) }
+.description {
+  color: var(--grey);
+}
 
-.about-description-images img { width: 100px; }
+.aboutDescriptionImages img {
+  width: 100px;
+}
 
-.razer-nari-logo {
-	position: absolute;
-	top: 550px;
-	right: 360px;
-	float: right;
-	width: 250px;
+.razerNariLogo {
+  position: absolute;
+  top: 550px;
+  right: 360px;
+  float: right;
+  width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutSection {
+    background-image: url(../../Assets/banner.png);
+    background-position-y: bottom;
+  }
+
+  .aboutDescriptionContainer {
+    padding: 25px 0 50px 0;
+    width: 100%;
+  }
+
+  .razerNariLogo {
+    display: none;
+  }
+
+  .aboutDescriptionImages img {
+    width: 50px;
+  }
 }
