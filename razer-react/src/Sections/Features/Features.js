@@ -12,8 +12,8 @@ import GamingHeadsetC from "../../Assets/razer-nari-gallery-07-wireless-gaming-h
 import GamingHeadsetD from "../../Assets/razer-nari-gallery-08-wireless-gaming-headset xs.jpg";
 import GamingHeadsetImageA from "../../Assets/razer-nari-gallery-05-wireless-gaming-headset.jpg";
 import GamingHeadsetImageB from "../../Assets/razer-nari-gallery-06-wireless-gaming-headset.jpg";
-import GamingHeadsetImageC from "../../Assets/razer-nari-gallery-05-wireless-gaming-headset.jpg";
-import GamingHeadsetImageD from "../../Assets/razer-nari-gallery-05-wireless-gaming-headset.jpg";
+import GamingHeadsetImageC from "../../Assets/razer-nari-gallery-07-wireless-gaming-headset.jpg";
+import GamingHeadsetImageD from "../../Assets/razer-nari-gallery-08-wireless-gaming-headset.jpg";
 import { Modal, Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -22,7 +22,6 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import ViewModal from "../../Components/Modals/Modal";
 export default function Features(props) {
   const features = [
     {
@@ -112,7 +111,7 @@ export default function Features(props) {
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
-                  href="#viewImage1"
+                  href="#viewImage"
                   onClick={() => setFirstSwiperImgShow(true)}
                 >
                   VIEW FULLSCREEN
@@ -124,7 +123,7 @@ export default function Features(props) {
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
-                  href="#viewImage1"
+                  href="#viewImage"
                   onClick={() => setSecondSwiperImgShow(true)}
                 >
                   VIEW FULLSCREEN
@@ -136,7 +135,7 @@ export default function Features(props) {
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
-                  href="#viewImage3"
+                  href="#viewImage"
                   onClick={() => setThirdSwiperImgShow(true)}
                 >
                   VIEW FULLSCREEN
@@ -148,7 +147,7 @@ export default function Features(props) {
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
-                  href="#viewImage4"
+                  href="#viewImage"
                   onClick={() => setFourthSwiperImgShow(true)}
                 >
                   VIEW FULLSCREEN
@@ -160,7 +159,7 @@ export default function Features(props) {
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
-                  href="#viewImage1"
+                  href="#viewImage"
                   onClick={() => setFifthSwiperImgShow(true)}
                 >
                   VIEW FULLSCREEN
@@ -172,7 +171,7 @@ export default function Features(props) {
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
-                  href="#viewImage1"
+                  href="#viewImage"
                   onClick={() => setSixthSwiperImgShow(true)}
                 >
                   VIEW FULLSCREEN
@@ -184,71 +183,62 @@ export default function Features(props) {
         <Modal
           show={firstSwiperImgShow}
           onHide={() => setFirstSwiperImgShow(false)}
-          aria-labelledby="example-modal-sizes-title-sm"
+          aria-labelledby="image-modal"
+          centered
         >
-          <Modal.Body closeButton>
-            {/* <img src={GamingHeadsetImageA} /> */}
+          <Modal.Body>
+            <img class="img-fluid" src={GamingHeadsetImageA} />
           </Modal.Body>
         </Modal>
         <Modal
           show={secondSwiperImgShow}
           onHide={() => setSecondSwiperImgShow(false)}
-          aria-labelledby="example-modal-sizes-title-sm"
+          aria-labelledby="image-modal"
+          centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-sm">
-              Second Modal
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
+          <Modal.Body>
+            <img class="img-fluid" src={GamingHeadsetImageB} />
+          </Modal.Body>
         </Modal>
         <Modal
           show={thirdSwiperImgShow}
           onHide={() => setThirdSwiperImgShow(false)}
-          aria-labelledby="example-modal-sizes-title-sm"
+          aria-labelledby="image-modal"
+          centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-sm">
-              Third Modal
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
+          <Modal.Body>
+            <img class="img-fluid" src={GamingHeadsetImageC} />
+          </Modal.Body>
         </Modal>
         <Modal
           show={fourthSwiperImgShow}
           onHide={() => setFourthSwiperImgShow(false)}
-          aria-labelledby="example-modal-sizes-title-sm"
+          aria-labelledby="image-modal"
+          centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-sm">
-              Fourth Modal
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
+          <Modal.Body>
+            <img class="img-fluid" src={GamingHeadsetImageD} />
+          </Modal.Body>
         </Modal>
         <Modal
           show={fifthSwiperImgShow}
           onHide={() => setFifthSwiperImgShow(false)}
-          aria-labelledby="example-modal-sizes-title-sm"
+          aria-labelledby="image-modal"
+          centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-sm">
-              Fifth Modal
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
+          <Modal.Body>
+            <img class="img-fluid" src={GamingHeadsetImageA} />
+          </Modal.Body>
         </Modal>
         <Modal
           show={sixthSwiperImgShow}
           onHide={() => setSixthSwiperImgShow(false)}
-          aria-labelledby="example-modal-sizes-title-sm"
+          aria-labelledby="image-modal"
+          centered
         >
-          <Modal.Header closeButton>
-            <Modal.Title id="example-modal-sizes-title-sm">
-              Sixth Modal
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>...</Modal.Body>
+          <Modal.Body>
+            <img class="img-fluid" src={GamingHeadsetImageB} />
+          </Modal.Body>
         </Modal>
       </section>
     </>

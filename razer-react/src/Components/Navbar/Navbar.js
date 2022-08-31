@@ -6,14 +6,19 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faChevronRight,
+  faChevronLeft,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import RazerLogo from "../../Assets/wordmark.svg";
 import "./Navbar.css";
 
 function MainNavbar() {
   const [show, setShow] = useState(false);
-  const handleShow = () => setShow(true);
-  const handleClose = () => setShow(false);
+  const [showProductMenu, setShowProductMenu] = useState(false);
+  const [showAudioMenu, setShowAudioMenu] = useState(false);
   return (
     <>
       <Navbar expand="lg">
@@ -21,9 +26,13 @@ function MainNavbar() {
           <Navbar.Brand>
             <img src={RazerLogo} alt="Razer Logo" />
           </Navbar.Brand>
-          <Button className="d-block d-sm-none" onClick={handleShow}>
+          <a
+            href="#mobMenu"
+            className="d-block d-sm-none"
+            onClick={() => setShow(true)}
+          >
             <FontAwesomeIcon icon={faBars} />
-          </Button>
+          </a>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <NavDropdown title="PRODUCTS" id="basic-nav-dropdown">
@@ -52,16 +61,26 @@ function MainNavbar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Offcanvas show={show} onHide={handleClose} id="navMobMenu">
-        <Offcanvas.Header closeButton>
+      <Offcanvas show={show} onHide={() => setShow(false)}>
+        <Offcanvas.Header>
           <Offcanvas.Title>MENU</Offcanvas.Title>
+          <FontAwesomeIcon
+            icon={faXmark}
+            className="navClose"
+            onClick={() => setShow(false)}
+          />
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div class="mob-menu">
-            <ul class="mob-menu-list">
+          <div class="mobMenu">
+            <ul class="mobMenuList">
               <li>
-                <a href="#productMobMenu" role="button" onClick={handleShow}>
-                  PRODUCTS<i class="fa-solid fa-chevron-right"></i>
+                <a
+                  href="#productMobMenu"
+                  role="button"
+                  onClick={() => setShowProductMenu(true)}
+                >
+                  PRODUCTS
+                  <FontAwesomeIcon icon={faChevronRight} />
                 </a>
               </li>
               <li>
@@ -75,6 +94,68 @@ function MainNavbar() {
               </li>
             </ul>
             <button class="buy-btn">BUY NOW</button>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+      <Offcanvas
+        show={showProductMenu}
+        onHide={() => setShowProductMenu(false)}
+        href="productMobMenu"
+      >
+        <Offcanvas.Header>
+          <Offcanvas.Title onClick={() => setShowProductMenu(false)}>
+            <FontAwesomeIcon icon={faChevronLeft} class="leftIcon" />
+            PRODUCTS
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div class="mobMenu">
+            <ul class="mobMenuList">
+              <li>
+                <a href="">LAPTOPS</a>
+              </li>
+              <li>
+                <a href="">MOBILES</a>
+              </li>
+              <li>
+                <a href="">MOUSES AND MATS</a>
+              </li>
+              <li>
+                <a href="">KEYBOARDS</a>
+              </li>
+              <li>
+                <a href="#audioMobMenu" onClick={() => setShowAudioMenu(true)}>
+                  HEADSETS AND AUDIO <FontAwesomeIcon icon={faChevronRight} />
+                </a>
+              </li>
+              <li>
+                <a href="">CONSOLE</a>
+              </li>
+            </ul>
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+      <Offcanvas
+        show={showAudioMenu}
+        onHide={() => setShowAudioMenu(false)}
+        id="audioMobMenu"
+      >
+        <Offcanvas.Header>
+          <Offcanvas.Title onClick={() => setShowAudioMenu(false)}>
+            <FontAwesomeIcon icon={faChevronLeft} class="leftIcon" />
+            HEADSETS AND AUDIO
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div class="mobMenu">
+            <ul class="mobMenuList">
+              <li>
+                <a href="">WIRED</a>
+              </li>
+              <li>
+                <a href="">WIRELESS</a>
+              </li>
+            </ul>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

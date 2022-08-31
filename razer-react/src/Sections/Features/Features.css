@@ -3,7 +3,8 @@
   background-color: var(--dark-grey);
 }
 .flexContainer {
-  margin: 50px 0;
+  margin-block: 50px;
+  margin-inline: auto;
   display: flex;
   flex-wrap: wrap;
   width: 51% !important;
@@ -57,11 +58,6 @@
   opacity: unset !important;
 }
 
-/* .swiper-pagination{
-    position: unset !important;
-    margin-top: 20px;
-} */
-
 .view-fullscreen {
   margin-top: -135px;
 }
@@ -87,6 +83,14 @@
 
 .view-fullscreen a:hover {
   color: unset;
+}
+
+.modal-body {
+  padding: unset !important;
+}
+
+.modal-dialog {
+  max-width: 1000px !important;
 }
 
 @media screen and (max-width: 600px) {

@@ -67,3 +67,59 @@ nav {
 .buy-btn:hover {
   color: unset;
 }
+
+.offcanvas {
+  background-color: var(--black) !important;
+}
+
+.offcanvas-title,
+.offcanvas-header .btn-close {
+  font-weight: bold !important;
+  color: var(--grey) !important;
+}
+
+.mobMenuList {
+  padding-left: unset;
+  list-style-type: none;
+}
+
+.mobMenu .buy-btn {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.mobMenuList li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--grey);
+  text-decoration: none;
+}
+
+.mobMenuList li {
+  margin-bottom: 30px;
+}
+
+.mobMenuList li i {
+  float: right;
+}
+
+.offcanvas-header a {
+  text-decoration: unset;
+}
+
+svg {
+  float: right;
+}
+
+.leftIcon {
+  float: left;
+  height: 1em;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.navClose,
+.header-container a svg {
+  color: var(--grey);
+}
