@@ -31,7 +31,7 @@ export default function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col sm={2} className="m-auto d-block">
+            <Col sm={2} className="d-block footerIcons">
               <a href="">
                 <img className="footerIcon" src={twitterIcon} />
               </a>

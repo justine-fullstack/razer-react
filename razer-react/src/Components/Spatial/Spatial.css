@@ -27,3 +27,17 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .thxSpatialContainer {
+    width: 50%;
+  }
+
+  .thxSpatial {
+    background-position: center;
+  }
+
+  .flexContainer {
+    width: 100%;
+  }
+}

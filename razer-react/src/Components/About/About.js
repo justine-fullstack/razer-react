@@ -27,7 +27,7 @@ function About() {
               <img src={ChromaLogo} alt="Chroma Logo" />
             </div>
             <img
-              className="razerNariLogo"
+              className="razerNariLogo d-md-none"
               src={RazerNariLogo}
               alt="Razer Nari Logo"
             />

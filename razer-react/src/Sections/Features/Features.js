@@ -107,7 +107,7 @@ export default function Features(props) {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img class="img-to-hover" src={GamingHeadsetA} />
+              <img alt="" class="img-to-hover" src={GamingHeadsetA} />
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
@@ -119,7 +119,7 @@ export default function Features(props) {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img class="img-to-hover" src={GamingHeadsetB} />
+              <img alt="" class="img-to-hover" src={GamingHeadsetB} />
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
@@ -131,7 +131,7 @@ export default function Features(props) {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img class="img-to-hover" src={GamingHeadsetC} />
+              <img alt="" class="img-to-hover" src={GamingHeadsetC} />
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
@@ -143,7 +143,7 @@ export default function Features(props) {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img class="img-to-hover" src={GamingHeadsetD} />
+              <img alt="" class="img-to-hover" src={GamingHeadsetD} />
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
@@ -155,7 +155,7 @@ export default function Features(props) {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img class="img-to-hover" src={GamingHeadsetA} />
+              <img alt="" class="img-to-hover" src={GamingHeadsetA} />
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
@@ -167,7 +167,7 @@ export default function Features(props) {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img class="img-to-hover" src={GamingHeadsetB} />
+              <img alt="" class="img-to-hover" src={GamingHeadsetB} />
               <div class="view-fullscreen">
                 <a
                   class="view-btn"
@@ -187,7 +187,7 @@ export default function Features(props) {
           centered
         >
           <Modal.Body>
-            <img class="img-fluid" src={GamingHeadsetImageA} />
+            <img alt="" class="img-fluid" src={GamingHeadsetImageA} />
           </Modal.Body>
         </Modal>
         <Modal
@@ -197,7 +197,7 @@ export default function Features(props) {
           centered
         >
           <Modal.Body>
-            <img class="img-fluid" src={GamingHeadsetImageB} />
+            <img alt="" class="img-fluid" src={GamingHeadsetImageB} />
           </Modal.Body>
         </Modal>
         <Modal
@@ -207,7 +207,7 @@ export default function Features(props) {
           centered
         >
           <Modal.Body>
-            <img class="img-fluid" src={GamingHeadsetImageC} />
+            <img alt="" class="img-fluid" src={GamingHeadsetImageC} />
           </Modal.Body>
         </Modal>
         <Modal
@@ -217,7 +217,7 @@ export default function Features(props) {
           centered
         >
           <Modal.Body>
-            <img class="img-fluid" src={GamingHeadsetImageD} />
+            <img alt="" class="img-fluid" src={GamingHeadsetImageD} />
           </Modal.Body>
         </Modal>
         <Modal
@@ -227,7 +227,7 @@ export default function Features(props) {
           centered
         >
           <Modal.Body>
-            <img class="img-fluid" src={GamingHeadsetImageA} />
+            <img alt="" class="img-fluid" src={GamingHeadsetImageA} />
           </Modal.Body>
         </Modal>
         <Modal
@@ -237,7 +237,7 @@ export default function Features(props) {
           centered
         >
           <Modal.Body>
-            <img class="img-fluid" src={GamingHeadsetImageB} />
+            <img alt="" class="img-fluid" src={GamingHeadsetImageB} />
           </Modal.Body>
         </Modal>
       </section>

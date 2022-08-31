@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -28,12 +27,12 @@ function MainNavbar() {
           </Navbar.Brand>
           <a
             href="#mobMenu"
-            className="d-block d-sm-none"
+            className="d-block d-sm-none d-md-block"
             onClick={() => setShow(true)}
           >
             <FontAwesomeIcon icon={faBars} />
           </a>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className="">
             <Nav className="ms-auto">
               <NavDropdown title="PRODUCTS" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">LAPTOPS</NavDropdown.Item>

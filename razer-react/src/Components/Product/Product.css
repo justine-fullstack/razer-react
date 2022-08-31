@@ -1,38 +1,37 @@
-.imgContainer{
-    background-color: var(--black);
+.imgContainer {
+  background-color: var(--black);
 }
 
-.cardImg{
-    max-width: 250px;
-    margin: auto;
-    display: block;
+.cardImg {
+  margin: auto;
+  display: block;
 }
 
-.cardTitle{
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--white);
-    letter-spacing: 1px;
+.cardTitle {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 1px;
 }
 
-.cardSubtitle{
-    font-size: 12px;
-    color:var(--grey);
+.cardSubtitle {
+  font-size: 12px;
+  color: var(--grey);
 }
 
-.cardDescription{
-    padding: 15px 15px;
-    border-bottom: 3px solid var(--green);
-    background-color: #161415;
+.cardDescription {
+  padding: 15px 15px;
+  border-bottom: 3px solid var(--green);
+  background-color: #161415;
 }
 
-.learnMore{
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: unset;
-    color: var(--green);
+.learnMore {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: unset;
+  color: var(--green);
 }
 
-.learnMore:hover{
-    color: var(--green);
+.learnMore:hover {
+  color: var(--green);
 }

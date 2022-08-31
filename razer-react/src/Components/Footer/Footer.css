@@ -43,6 +43,10 @@
   color: var(--grey);
 }
 
+.footerIcons {
+  margin: auto;
+}
+
 @media screen and (max-width: 600px) {
   .footerList {
     display: unset;
@@ -64,5 +68,19 @@
 
   .copyright {
     text-align: unset;
+  }
+}
+
+@media screen and (width: 768px) {
+  .footerList li a {
+    padding: 0 10px;
+  }
+
+  .footerIcon {
+    padding: 0 5px;
+  }
+
+  .footerIcons {
+    margin: unset;
   }
 }
