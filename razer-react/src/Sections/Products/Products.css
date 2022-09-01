@@ -1,11 +1,11 @@
-.productsSection{
-    background-color: var(--dark-grey);
+.products-section {
+  background-color: var(--dark-grey);
 }
 
-.otherProducts{
-    padding-top: 100px;
+.other-products {
+  padding-top: 6.25rem;
 }
 
-.otherProductsRow{
-    padding-bottom: 100px;
+.other-products-row {
+  padding-bottom: 6.25rem;
 }

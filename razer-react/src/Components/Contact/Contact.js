@@ -4,11 +4,11 @@ import "../Contact/Contact.css";
 
 export default function Contact() {
   return (
-    <section className="contactSection">
+    <section className="contact-section">
       <Container>
-        <Row className="contactRow">
+        <Row className="contact-row">
           <Col sm={5}>
-            <p className="sectionHeadline">ASK A QUESTION</p>
+            <p className="section-headline">ASK A QUESTION</p>
             <Form>
               <div className="mb-3">
                 <Row>
@@ -24,31 +24,31 @@ export default function Contact() {
                     <Form.Control type="email" placeholder="Email Address" />
                     <Form.Control type="text" placeholder="Permanent Address" />
                     <Form.Control
-                      className="messageInput"
+                      className="message-input"
                       type="text"
                       placeholder="Message"
                     />
                   </Col>
                 </Row>
               </div>
-              <Button className="actionBtn" type="submit">
+              <Button className="action-btn" type="submit">
                 SEND
               </Button>
             </Form>
           </Col>
           <Col sm={4}></Col>
           <Col sm={3}>
-            <p className="sectionHeadline">INFORMATION</p>
-            <div className="infoContainer">
-              <p className="infoHeader">ADDRESS</p>
+            <p className="section-headline">INFORMATION</p>
+            <div className="info-container">
+              <p className="info-header">ADDRESS</p>
               <p className="info">
                 123 East 123th St. <br />
                 Floor 123 <br />
                 New York, NY, 1 0003
               </p>
-              <p className="infoHeader">PHONE</p>
+              <p className="info-header">PHONE</p>
               <p className="info">+1 234 567 8910</p>
-              <p className="infoHeader">EMAIL</p>
+              <p className="info-header">EMAIL</p>
               <p className="info">hello@fullstack.com</p>
             </div>
           </Col>

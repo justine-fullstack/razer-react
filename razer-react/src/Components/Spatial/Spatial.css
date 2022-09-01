@@ -1,43 +1,39 @@
-.thxSpatialContainer {
+.thx-spatial-container {
+  padding: 6.25rem 0;
   width: 28%;
-  padding: 100px 0;
 }
 
-.spatialSection {
+.spatial-section {
   background-image: url(../../Assets/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
   background-size: cover;
 }
 
-.thxIcon {
-  width: 150px;
+.thx-icon {
+  width: 9rem;
 }
 
 @media screen and (max-width: 600px) {
-  .spatialSection {
+  .spatial-section {
     background-image: url(../../Assets/6.jpg);
     background-position: right;
   }
 
-  .thxSpatialContainer {
-    padding: 50px 0;
+  .thx-spatial-container {
+    padding: 3rem 0;
     width: 100%;
   }
 
-  .thxIcon {
+  .thx-icon {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .thxSpatialContainer {
+@media screen and (width: 768px) {
+  .thx-spatial-container {
     width: 50%;
   }
 
-  .thxSpatial {
+  .spatial-section {
     background-position: center;
-  }
-
-  .flexContainer {
-    width: 100%;
   }
 }

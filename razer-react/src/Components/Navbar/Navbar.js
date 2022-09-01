@@ -19,7 +19,7 @@ function MainNavbar() {
   const [showProductMenu, setShowProductMenu] = useState(false);
   const [showAudioMenu, setShowAudioMenu] = useState(false);
   return (
-    <>
+    <section>
       <Navbar expand="lg">
         <Container className="header-container">
           <Navbar.Brand>
@@ -27,12 +27,12 @@ function MainNavbar() {
           </Navbar.Brand>
           <a
             href="#mobMenu"
-            className="d-block d-sm-none d-md-block"
+            className="d-lg-none d-sm-none d-md-block"
             onClick={() => setShow(true)}
           >
             <FontAwesomeIcon icon={faBars} />
           </a>
-          <Navbar.Collapse id="basic-navbar-nav" className="">
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <NavDropdown title="PRODUCTS" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">LAPTOPS</NavDropdown.Item>
@@ -70,8 +70,8 @@ function MainNavbar() {
           />
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div class="mobMenu">
-            <ul class="mobMenuList">
+          <div class="mob-menu">
+            <ul class="mob-menu-list">
               <li>
                 <a
                   href="#productMobMenu"
@@ -99,7 +99,7 @@ function MainNavbar() {
       <Offcanvas
         show={showProductMenu}
         onHide={() => setShowProductMenu(false)}
-        href="productMobMenu"
+        href="#productMobMenu"
       >
         <Offcanvas.Header>
           <Offcanvas.Title onClick={() => setShowProductMenu(false)}>
@@ -108,8 +108,8 @@ function MainNavbar() {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div class="mobMenu">
-            <ul class="mobMenuList">
+          <div class="mob-menu">
+            <ul class="mob-menu-list">
               <li>
                 <a href="">LAPTOPS</a>
               </li>
@@ -146,8 +146,8 @@ function MainNavbar() {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <div class="mobMenu">
-            <ul class="mobMenuList">
+          <div class="mob-menu">
+            <ul class="mob-menu-list">
               <li>
                 <a href="">WIRED</a>
               </li>
@@ -158,7 +158,7 @@ function MainNavbar() {
           </div>
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </section>
   );
 }
 

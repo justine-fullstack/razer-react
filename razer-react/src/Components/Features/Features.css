@@ -1,35 +1,27 @@
-.featureFlex img {
-  width: 40px;
+.feature-flex img {
+  width: 2.5rem;
 }
 
-.featureFlex {
-  margin-bottom: 50px;
-  flex-grow: 1;
+.feature-flex {
+  margin-bottom: 3rem;
   width: 33%;
+  flex-grow: 1;
 }
 
 .feature {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--white);
 }
 
-.featureDescription {
+.feature-description {
   width: 90%;
-  font-size: 13px;
-}
-
-.featureDescription {
-  color: var(--grey);
-}
-
-.sectionDivider {
-  margin-bottom: 50px;
+  font-size: 0.8rem;
   color: var(--grey);
 }
 
 @media screen and (max-width: 600px) {
-  .featureFlex {
+  .feature-flex {
     width: 100%;
   }
 }

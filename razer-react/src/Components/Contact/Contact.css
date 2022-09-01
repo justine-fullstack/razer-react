@@ -1,64 +1,64 @@
-.contactSection {
+.contact-section {
   background-color: var(--black);
 }
-.form-control {
-  font-size: 12px !important;
-  font-weight: bold !important;
-  color: var(--white) !important;
-  padding: 12px !important;
-  background-color: #fff0 !important;
-  border: 1px solid white !important;
-  border-radius: 5px !important;
-  margin-bottom: 16px !important;
+section .row .form-control {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--white);
+  background-color: #fff0;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .form-control::placeholder {
   color: var(--grey) !important;
 }
 
-.contactRow {
-  padding: 100px 0;
+.contact-row {
+  padding: 6.25rem 0;
 }
 
-.messageInput {
-  height: 100px;
+.message-input {
+  height: 6.25rem;
 }
 
-.actionBtn {
-  font-size: 12px !important;
-  font-weight: bold !important;
-  color: var(--black) !important;
-  margin-top: 15px !important;
-  padding: 15px 70px !important;
-  background: var(--green) !important;
-  border-radius: 40px !important;
-  border: unset !important;
+section .contact-row form .action-btn {
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--black);
+  background: var(--green);
+  border: unset;
+  border-radius: 2.5rem;
 }
 
-.infoHeader {
-  font-size: 14px;
+.info-header {
+  margin-top: 5px;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--white);
-  margin-top: 5px;
 }
 
 .info {
-  font-size: 13px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: var(--grey);
 }
 
 @media screen and (max-width: 600px) {
-  .contactRow {
-    padding: 50px 0;
+  .contact-row {
+    padding: 3rem 0;
   }
 
-  .actionBtn {
+  .action-btn {
     width: 100%;
   }
 
-  .sectionHeadline {
+  .section-headline {
+    margin: 3rem 0;
     text-align: center;
-    margin: 50px 0;
   }
 }

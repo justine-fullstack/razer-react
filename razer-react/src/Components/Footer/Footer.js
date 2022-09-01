@@ -8,15 +8,15 @@ import "../Footer/Footer.css";
 
 export default function Footer() {
   return (
-    <section className="footerSection">
+    <section className="footer-section">
       <Container>
-        <div className="footerContent">
+        <div className="footer-content">
           <Row>
             <Col sm={2}>
-              <img className="footerIcon" src={razerFooterIcon} />
+              <img className="footer-icon" src={razerFooterIcon} />
             </Col>
             <Col sm={8}>
-              <ul className="footerList">
+              <ul className="footer-list">
                 <li>
                   <a href="">PRODUCTS</a>
                 </li>
@@ -31,19 +31,19 @@ export default function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col sm={2} className="d-block footerIcons">
+            <Col sm={2} className="d-block footer-icons">
               <a href="">
-                <img className="footerIcon" src={twitterIcon} />
+                <img className="footer-icon" src={twitterIcon} />
               </a>
               <a href="">
-                <img className="footerIcon" src={facebookIcon} />
+                <img className="footer-icon" src={facebookIcon} />
               </a>
               <a href="">
-                <img className="footerIcon" src={googleIcon} />
+                <img className="footer-icon" src={googleIcon} />
               </a>
             </Col>
           </Row>
-          <hr className="footerSectionDivider" />
+          <hr className="footer-section-divider" />
           <p class="mb-0 copyright d-none d-sm-block">
             COPYRIGHT 2019 FULLSTACKHQ INC. ALL RIGHTS RESERVED
           </p>

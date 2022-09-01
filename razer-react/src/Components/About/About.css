@@ -1,63 +1,80 @@
-.aboutSection {
+.about-section {
   background-image: url(../../Assets/razer-nari-hero-desktop-wireless-gaming-headset\ CL.jpg);
   background-size: cover;
 }
 
-.aboutDescriptionContainer {
-  padding: 150px 0 125px 0;
-  width: 50%;
+.about-description-container {
+  padding: 9rem 0 8rem 0;
 }
 
-.descriptionTitle {
-  font-size: 40px;
+.description-title {
+  font-size: 2.5rem;
   font-weight: bold;
-  color: var(--white);
   line-height: 1.2;
+  color: var(--white);
 }
 
 .description {
   color: var(--grey);
 }
 
-.aboutDescriptionImages img {
-  width: 100px;
+.about-description-images img {
+  width: 6.25rem;
 }
 
-.razerNariLogo {
+.razer-nari-logo {
   position: absolute;
-  top: 550px;
-  right: 360px;
   float: right;
-  width: 250px;
+  top: 35rem;
+  right: 25rem;
+  width: 15rem;
 }
 
 @media screen and (max-width: 600px) {
-  .aboutSection {
+  .about-section {
     background-image: url(../../Assets/banner.png);
     background-position-y: bottom;
   }
 
-  .aboutDescriptionContainer {
-    padding: 25px 0 50px 0;
-    width: 100%;
+  .about-description-container {
+    padding: 1.5rem 0 3rem 0;
   }
 
-  .razerNariLogo {
+  .razer-nari-logo {
     display: none;
   }
 
-  .aboutDescriptionImages img {
-    width: 50px;
+  .about-description-images img {
+    width: 3rem;
+  }
+
+  .description {
+    color: var(--white);
   }
 }
 
-@media screen and (max-width: 768px) {
-  .aboutSection {
-    background-position-x: -2350px;
+@media screen and (width: 768px) {
+  .about-section {
+    background-position-x: -140rem;
   }
 
-  .aboutDescriptionContainer {
-    padding: 50px 0 40px 0;
-    width: 60% !important;
+  section .row .about-description-container {
+    padding: 3rem 0 2.5rem 0;
+    width: 58%;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .about-section {
+    background-position: center;
+  }
+
+  section .row .about-description-container {
+    padding: 9rem 0 8rem 0;
+    width: 50%;
+  }
+
+  .razer-nari-logo {
+    right: 5rem;
   }
 }

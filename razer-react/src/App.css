@@ -10,24 +10,30 @@
   --white: #fff;
 }
 
-.container {
-  max-width: 1200px !important;
+body .container {
+  max-width: 75rem;
 }
 
-.sectionHeadline {
+.section-headline {
   font-size: 20px;
   font-weight: bold;
   color: var(--green);
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    padding: 0 30px !important;
+  body .container {
+    padding: 0 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 50px !important;
+@media screen and (width: 768px) {
+  body .container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (width: 1024px) {
+  body .container {
+    padding: 0 60px;
   }
 }

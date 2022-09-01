@@ -5,13 +5,13 @@ import ChromaLogo from "../../Assets/razer-nari-chroma-logo.png";
 import RazerNariLogo from "../../Assets/razer-nari-logo.svg";
 import "./About.css";
 
-function About() {
+export default function About() {
   return (
-    <section className="aboutSection">
+    <section className="about-section">
       <Container>
         <Row>
-          <Col md="6" className="aboutDescriptionContainer">
-            <p className="descriptionTitle">SUPREME WIRELESS IMMERSION</p>
+          <Col md="6" className="about-description-container">
+            <p className="description-title">SUPREME WIRELESS IMMERSION</p>
             <p className="description">
               When it comes to gaming immersion, sound plays a critical role. It
               engages your sense of hearing to determine the atmosphere and
@@ -22,12 +22,12 @@ function About() {
               design features to make this one of the most comfortable daily
               drivers for gaming. This is the Razer Nari.
             </p>
-            <div className="aboutDescriptionImages">
+            <div className="about-description-images">
               <img src={ThxLogo} alt="THX Logo" />
               <img src={ChromaLogo} alt="Chroma Logo" />
             </div>
             <img
-              className="razerNariLogo d-md-none"
+              className="razer-nari-logo d-md-none d-lg-block"
               src={RazerNariLogo}
               alt="Razer Nari Logo"
             />
@@ -37,5 +37,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

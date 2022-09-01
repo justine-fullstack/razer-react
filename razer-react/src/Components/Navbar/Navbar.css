@@ -3,19 +3,19 @@ nav {
 }
 
 .navbar-brand {
-  width: 100px;
+  width: 6.25rem;
 }
 
-.navbar-nav .nav-link,
+body .nav-link,
 .dropdown-menu.show a {
-  font-size: 12px;
+  padding: 0 2rem !important;
+  font-size: 0.75rem;
   font-weight: bold;
   color: var(--grey);
-  padding: 0 30px !important;
 }
 
 .dropdown-menu .show {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: var(--grey);
 }
@@ -33,30 +33,30 @@ nav {
 }
 
 .dropdown-menu.show {
-  top: 33px !important ;
+  top: 2rem !important ;
   background-color: black;
 }
 
 .dropdown-menu.show a {
-  padding: 10px 30px !important;
+  padding: 0.6rem 2rem !important;
 }
 
 .dropdown-menu.show > .dropdown-item:hover {
-  background: unset;
   color: var(--green);
+  background: unset;
 }
 
 .submenu .dropdown-menu.show {
-  margin-top: -40px !important;
+  margin-top: -2.5rem !important;
 }
 
 .buy-btn {
-  font-size: 12px;
+  padding: 1rem 3rem;
+  font-size: 0.75rem;
   font-weight: bold;
   color: var(--dark-grey);
-  padding: 15px 45px;
-  border-radius: 25px;
   border: none;
+  border-radius: 1.5rem;
   background: var(--green);
 }
 
@@ -78,29 +78,29 @@ nav {
   color: var(--grey) !important;
 }
 
-.mobMenuList {
+.mob-menu-list {
   padding-left: unset;
   list-style-type: none;
 }
 
-.mobMenu .buy-btn {
+.mob-menu .buy-btn {
   margin: auto;
   display: block;
   width: 100%;
 }
 
-.mobMenuList li a {
-  font-size: 18px;
+.mob-menu-list li a {
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--grey);
   text-decoration: none;
+  color: var(--grey);
 }
 
-.mobMenuList li {
-  margin-bottom: 30px;
+.mob-menu-list li {
+  margin-bottom: 2rem;
 }
 
-.mobMenuList li i {
+.mob-menu-list li i {
   float: right;
 }
 
@@ -114,9 +114,9 @@ svg {
 
 .leftIcon {
   float: left;
-  height: 1em;
   margin-top: 5px;
-  margin-right: 10px;
+  margin-right: 0.6rem;
+  height: 1rem;
 }
 
 .navClose,

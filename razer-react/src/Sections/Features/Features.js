@@ -77,21 +77,21 @@ export default function Features(props) {
 
   return (
     <>
-      <section className="featuresSection">
+      <section className="features-section">
         <Container>
-          <div className="featureHeader">
-            <p className="sectionHeadline">COMPLEMENTED BY COMFORT</p>
-            <p className="featureSubheadline">
+          <div className="feature-header">
+            <p className="section-headline">COMPLEMENTED BY COMFORT</p>
+            <p className="feature-subheadline">
               The Razer Nari is designed so that its immersive technology is
               complemented by comfortable features, letting you escape into game
               worlds for hours without strain.
             </p>
           </div>
         </Container>
-        <Container className="flexContainer">{feature}</Container>
+        <Container className="flex-container">{feature}</Container>
         <Container>
-          <hr className="sectionDivider" />
-          <p className="sectionHeadline text-center">PRODUCT IMAGES</p>
+          <hr className="section-divider" />
+          <p className="section-headline text-center">PRODUCT IMAGES</p>
           <Swiper
             slidesPerView={1}
             breakpoints={{
