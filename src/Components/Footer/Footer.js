@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="footer-content">
           <Row>
             <Col sm={2}>
-              <img className="footer-icon" src={razerFooterIcon} />
+              <img className="footer-icon" src={razerFooterIcon} alt="" />
             </Col>
             <Col sm={8}>
               <ul className="footer-list">
@@ -33,13 +33,13 @@ export default function Footer() {
             </Col>
             <Col sm={2} className="d-block footer-icons">
               <a href="">
-                <img className="footer-icon" src={twitterIcon} />
+                <img className="footer-icon" src={twitterIcon} alt="" />
               </a>
               <a href="">
-                <img className="footer-icon" src={facebookIcon} />
+                <img className="footer-icon" src={facebookIcon} alt="" />
               </a>
               <a href="">
-                <img className="footer-icon" src={googleIcon} />
+                <img className="footer-icon" src={googleIcon} alt="" />
               </a>
             </Col>
           </Row>

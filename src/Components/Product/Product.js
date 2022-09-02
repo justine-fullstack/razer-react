@@ -8,12 +8,12 @@ export default function Product(props) {
     <>
       <Col sm={3}>
         <div className="img-container">
-          <Image className="card-img" src={cardImg} fluid />
+          <Image className="card-img" src={cardImg} alt="" fluid />
         </div>
         <div className="card-description">
           <p className="card-title mb-0">{cardTitle}</p>
           <p className="card-subtitle">{cardSubtitle}</p>
-          <a href="" className="learn-more">
+          <a href="#" className="learn-more">
             LEARN MORE
           </a>
         </div>

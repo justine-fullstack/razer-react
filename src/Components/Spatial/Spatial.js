@@ -27,7 +27,7 @@ export default function Spatial() {
             during your game. Unleash your predatory instincts with sounds as a
             weapon.
           </p>
-          <img className="thx-icon" src={thxIcon} />
+          <img className="thx-icon" src={thxIcon} alt="" />
         </div>
       </Container>
     </section>

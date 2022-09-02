@@ -14,7 +14,7 @@ import GamingHeadsetImageA from "../../Assets/razer-nari-gallery-05-wireless-gam
 import GamingHeadsetImageB from "../../Assets/razer-nari-gallery-06-wireless-gaming-headset.jpg";
 import GamingHeadsetImageC from "../../Assets/razer-nari-gallery-07-wireless-gaming-headset.jpg";
 import GamingHeadsetImageD from "../../Assets/razer-nari-gallery-08-wireless-gaming-headset.jpg";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Features/Features.css";
